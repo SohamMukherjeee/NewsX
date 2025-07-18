@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import NewsGrid from "./NewsGrid";
-import LoadingScreen from "./loadingScreen";
+import LoadingScreen from "./LoadingScreen";
 import Footer from "./Footer";
 const PAGE_SIZE = 6;
 const TOTAL_PAGES = 6;
