@@ -10,16 +10,15 @@ function NewsAPI() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
+  const baseUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchNews = async () => {
       try {
         setLoading(true);
-        const response = await fetch(
-          `https://newsapi.org/v2/everything?q=news&language=en&sortBy=publishedAt&pageSize=${PAGE_SIZE}&page=${page}&apiKey=${
-            import.meta.env.VITE_API_URL
-          }`
-        );
+        const response = await fetch(`${baseUrl}/api/news?page=${page}`);
+
+        //   `https://newsapi.org/v2/everything?q=news&language=en&sortBy=publishedAt&pageSize=${PAGE_SIZE}&page=${page}&apiKey=${
         const data = await response.json();
         console.log("Fetched data:", data);
         setArticles(data.articles || []);

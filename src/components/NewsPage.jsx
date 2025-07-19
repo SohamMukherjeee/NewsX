@@ -12,18 +12,22 @@ function NewsPage() {
   const [articles, setArticles] = useState([]);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
+  const baseUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const fetchNews = async () => {
-      //setLoading(true);
-      const url = `https://newsapi.org/v2/everything?q=${country}&language=en&sortBy=publishedAt&pageSize=${PAGE_SIZE}&page=${page}&apiKey=${
-        import.meta.env.VITE_API_URL
-      }`;
+      setLoading(true); // Optional: Enable loading spinner
+      const url = `${baseUrl}/api/news/country?country=${country}&page=${page}`;
 
-      const res = await fetch(url);
-      const data = await res.json();
-      setArticles(data.articles);
-      setLoading(false);
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        setArticles(data.articles || []);
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      } finally {
+        setLoading(false);
+      }
     };
 
     fetchNews();
