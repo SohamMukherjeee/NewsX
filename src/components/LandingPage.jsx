@@ -8,7 +8,7 @@ function LandingPage() {
   const navigate = useNavigate();
   return (
     <div className="w-full h-screen bg-[#F1F1F1] flex items-center justify-center">
-      <div className="w-full h-[95vh] mx-4 bg-[#FFFFFF] rounded-xl shadow-lg flex px-12 py-10 flex-col sm:flex-row">
+      <div className="w-full h-[95vh] mx-7 bg-[#FFFFFF] rounded-xl shadow-lg flex px-12 py-10 flex-col sm:flex-row">
         {/* Left Section */}
         <div className="w-full sm:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl text-black font-semibold leading-snug">

@@ -1,6 +1,6 @@
-import man1 from "../assets/man1.jpg";
-import man2 from "../assets/man2.jpg";
-import man3 from "../assets/man3.jpg";
+import man1 from "../assets/Photo/man1.webp";
+import man2 from "../assets/Photo/man2.webp";
+import man3 from "../assets/Photo/man3.webp";
 
 function Avater() {
   return (
@@ -28,11 +28,6 @@ function Avater() {
             <a href="https://www.freepik.com/free-photo/closeup-young-hispanic-man-casuals-studio_27507633.htm">
               Image by tonodiaz on Freepik
             </a>
-          </div>
-        </div>
-        <div className="avatar">
-          <div className="w-12">
-            <img src="https://img.daisyui.com/images/profile/demo/wonderperson@192.webp" />
           </div>
         </div>
       </div>

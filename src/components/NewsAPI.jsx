@@ -18,7 +18,6 @@ function NewsAPI() {
         setLoading(true);
         const response = await fetch(`${baseUrl}/api/news?page=${page}`);
 
-        //   `https://newsapi.org/v2/everything?q=news&language=en&sortBy=publishedAt&pageSize=${PAGE_SIZE}&page=${page}&apiKey=${
         const data = await response.json();
         console.log("Fetched data:", data);
         setArticles(data.articles || []);

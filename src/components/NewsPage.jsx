@@ -16,7 +16,7 @@ function NewsPage() {
 
   useEffect(() => {
     const fetchNews = async () => {
-      setLoading(true); // Optional: Enable loading spinner
+      setLoading(true); 
       const url = `${baseUrl}/api/news/country?country=${country}&page=${page}`;
 
       try {
