@@ -12,7 +12,7 @@ function LandingPage() {
         {/* Left Section */}
         <div className="w-full sm:w-1/2 flex flex-col justify-center">
           <h1 className="text-4xl text-black font-semibold leading-snug">
-            Welcome to <span className="italic font-bold">NewsX.</span>
+            Welcome to <span className="italic font-bold ">NewsX.</span>
           </h1>
           <h2 className="pt-6 text-[#9B9B9B] text-md sm:text-lg pb-20">
             Your window to the world. <br />{" "}
