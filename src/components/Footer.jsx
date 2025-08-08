@@ -10,7 +10,10 @@ function Footer() {
         isHome ? "bg-[#F1F1F1]" : "bg-white"
       }`}
     >
-      <h1 className="text-center w-full text-7xl sm:text-9xl leading-[180px] sm:leading-[200px] text-[#9B9B9B] font-bold italic">
+      <h1
+        className="text-center w-full text-7xl sm:text-9xl leading-[180px] sm:leading-[200px] bg-gradient-to-r from-[#9B9B9B]
+ to-[#F1F1F1] bg-clip-text text-transparent  font-bold italic"
+      >
         NewsX
       </h1>
     </div>

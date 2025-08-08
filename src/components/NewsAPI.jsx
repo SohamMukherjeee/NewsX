@@ -34,7 +34,6 @@ function NewsAPI() {
   const handlePageChange = (pageNum) => {
     setPage(pageNum);
   };
-
   return (
     <>
       <div>

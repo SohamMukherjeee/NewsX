@@ -32,8 +32,13 @@ function Searchbar() {
           Country Specific News !!
         </h1>
       </div>
-
-      <div className="w-4/5 sm:w-1/3 h-15 sm:h-20 bg-white rounded-2xl shadow-2xl flex flex-col justify-center items-center gap-0 sm:gap-4 p-4">
+      <div
+        className="w-4/5 sm:w-1/3 h-15 sm:h-20 bg-white rounded-2xl shadow-2xl flex flex-col justify-center items-center gap-0 sm:gap-4 p-4"
+        style={{
+          backgroundImage:
+            "repeating-linear-gradient(45deg, transparent, transparent 2px, #f3f4f6 2px, #f3f4f6 4px)",
+        }}
+      >
         <div className="flex gap-x-2 sm:gap-x-30">
           <select
             className="border p-2 rounded-2xl"

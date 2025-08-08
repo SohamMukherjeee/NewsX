@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
@@ -11,8 +12,15 @@ function LandingPage() {
       <div className="w-full h-[95vh] mx-7 bg-[#FFFFFF] rounded-xl shadow-lg flex px-12 py-10 flex-col sm:flex-row">
         {/* Left Section */}
         <div className="w-full sm:w-1/2 flex flex-col justify-center">
-          <h1 className="text-4xl text-black font-semibold leading-snug">
-            Welcome to <span className="italic font-bold ">NewsX.</span>
+          <h1
+            className="text-5xl text-[#9B9B9B] leading-snug"
+            style={{
+              fontFamily: "Instrument Serif, serif",
+              fontWeight: 500,
+              fontStyle: "normal",
+            }}
+          >
+            Welcome to <span className="italic text-black">NewsX.</span>
           </h1>
           <h2 className="pt-6 text-[#9B9B9B] text-md sm:text-lg pb-20">
             Your window to the world. <br />{" "}
@@ -31,12 +39,15 @@ function LandingPage() {
         </div>
 
         {/* Right Section (optional image/animation) */}
-        <div className="w-full sm:w-1/2 flex items-center justify-center pt-25 sm:pt-0 pb-0 sm:pb-10">
-          <DotLottieReact
-            src="https://lottie.host/a40371d6-4076-4cb9-b858-4bae97d92dc4/mQCUviwozi.lottie"
-            loop
-            autoplay
-          />
+        <div className="w-full sm:w-1/2 flex items-center justify-center mt-8 sm:mt-0">
+          <div className="w-56 xs:w-64 sm:w-120 md:w-150 ">
+            <DotLottieReact
+              src="https://lottie.host/a40371d6-4076-4cb9-b858-4bae97d92dc4/mQCUviwozi.lottie"
+              loop
+              autoplay
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
         </div>
       </div>
     </div>
