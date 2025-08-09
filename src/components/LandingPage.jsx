@@ -39,8 +39,8 @@ function LandingPage() {
         </div>
 
         {/* Right Section (optional image/animation) */}
-        <div className="w-full sm:w-1/2 flex items-center justify-center mt-8 sm:mt-0">
-          <div className="w-56 xs:w-64 sm:w-120 md:w-150 ">
+        <div className="w-full sm:w-1/2 flex items-center justify-center mt-15 sm:mt-0">
+          <div className="w-65 xs:w-64 sm:w-120 md:w-150 ">
             <DotLottieReact
               src="https://lottie.host/a40371d6-4076-4cb9-b858-4bae97d92dc4/mQCUviwozi.lottie"
               loop

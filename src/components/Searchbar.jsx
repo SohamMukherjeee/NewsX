@@ -23,7 +23,7 @@ function Searchbar() {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <div className="w-full flex flex-col justify-center items-center mb-15 sm:mb-0">
       <div className="flex flex-row justify-center items-center">
         <span className=" text-2xl mt-1">
           <PiArrowBendLeftDownLight className="text-[#9B9B9B]" />
